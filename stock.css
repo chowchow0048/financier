@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stock-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0px 30px;
+}
+
+.hamburger{
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+}
+
+.stock-title{
+    font-size: 1.5rem;
+    width: fit-content;
+    height: 70px;
+    margin-bottom: 20px;
+    /* position: relative;
+    top: -20px;
+    padding: 0;
+    margin: 0; */
+}
+
+.stock-detail{
+    width: 100%;
+    height: auto;
+
+    .detail-title{
+        display: flex;
+        flex-direction: column;
+        
+        .title-name{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 3px;
+
+            .name-first{
+                color: black;
+                font-weight: 900;
+                margin-right: 10px;
+            }
+
+            .name-company{
+                color: #A7A5A5;
+                font-weight: 700;
+            }
+        }
+        .title-category{
+            color: #A7A5A5;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+    }
+    .detail-rolling{
+        display: flex;
+
+        .rolling-container{
+            display: flex;
+            margin-bottom: 5px;
+
+            .rolling-title{
+                color: #A7A5A5;
+                font-weight: 700;
+                margin-right: 5px;
+            }
+
+            .rolling-value{
+                color: black;
+                font-weight: 700;
+                margin-right: 5px;
+            }
+
+            .rolling-updown{
+                color: red;
+                font-weight: 700;
+                margin-right: 5px;
+            }
+        }
+    }
+    .detail-main{
+        display: flex;
+
+        .main-graph{
+            width: 75%;
+            height: 600px;
+            border-radius: 5px;
+            margin-right: 10px;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+
+            .graph-display{
+                width: 100%;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .test{
+                    width: 100%;
+                    height: 700px;
+                    object-fit: cover;
+                }
+            }
+
+            .graph-btns{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+                height: 100px;
+
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 30px;
+                    padding: 10px;
+                    background-color: white;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    transition: all 0.3s linear;
+                }
+
+                .btn:hover{
+                    background-color: #0066e3d5;
+                    color: white;
+                }
+
+                .btn:active{
+                    background-color: #0066e3d5;
+                    color: white;
+                    transform: scaleZ(-1);
+                    box-shadow: 3px 3px;
+                }
+            }
+        }
+
+        .main-stockdetail{
+            width: 25%;
+            height: 600px;
+
+            .stockdetail-mp, .stockdetail-mc, .stockdetail-cs, .stockdetail-spr, .stockdetail-at{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .mp-title, .mc-title, .cs-title, .spr-title, .at-title{
+                color: black;
+            }
+
+            .mp-value, .mc-value, .cs-value, .spr-value, .at-value{
+                color: #A7A5A5;
+            }
+
+            .stockdetail-news{
+                display: flex;
+                flex-direction: column;
+
+                .news-title{
+                    color: #005dce;
+                    font-weight: bolder;
+                    margin-bottom: 5px;
+                }
+
+                .news-articles{
+                    width: 100%;
+                    background-color: #A7A5A5;
+                    border: 1px solid #A7A5A5;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+

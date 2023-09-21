@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.hamburger{
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+}
+.main-title{
+    font-size: 2rem;
+}
+.main-search{
+    .search-bar{
+        width: 300px;
+        height: 25px;
+        padding: 10px;
+        margin: 0;
+        border: 1px solid #F3F3F3;
+        border-radius: 15px;
+        color: #757575;
+        font-size: 1rem;
+        background-color: #F3F3F3;
+        transition: all 0.2s linear;
+    }
+    .search-bar:focus{
+        outline: #d5d5d5;
+        color: white;
+        background-color: #d5d5d5;
+    }
+    .search-bar:focus::placeholder{
+        color: transparent
+    }
+}
+
+.main-stocks{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .stocks-stock{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+        height: 150px;
+        border: 1px solid #f3f3f3;
+        border-radius: 15px;
+        background-color: #F3F3F3;
+        transition: all 0.3s linear;
+    }
+    .stocks-stock:hover{
+        background-color: #d5d5d5;
+    }
+    .stocks-stock:focus{
+        background-color: #aaaaaa;
+    }
+}
